@@ -51,14 +51,26 @@ function renderHeader() {
 renderHeader();
 pike.customerCookies();
 pike.renderTd();
+seattleCenter.customerCookies();
+seattleCenter.renderTd();
+alki.customerCookies();
+alki.renderTd();
+capHill.customerCookies();
+capHill.renderTd();
+seaTacAir.renderTd();
+console.log(seaTacAir.customerCookies());
+var userForm = document.getElementById('patStore');
+userForm.addEventListener('submit', submitHandler);
 
-// var userForm = document.getElementById('new_store');
 
-// userForm.addEventListener('submit', submitHandler);
-
-// function submitHandler(event) {
-//   event.preventDefault();
-//   var storeName = event.target.store_name.value;
-//   var avgCustomers = event.target.avg_customer.value;
-//   console.log(storeName, avgCustomers);
-//   event.target.store_name.value = '';
+function submitHandler (event) {
+   event.preventDefault();
+var data = event.target.store_name.value;
+var miniC = event.target.minCust.value;
+var MaxiC = event.target.maxCust.value;
+var CpC = event.target.cookiePerCust.value;
+console.log(data);
+console.log(miniC);
+console.log(MaxiC);
+console.log(CpC);
+}
