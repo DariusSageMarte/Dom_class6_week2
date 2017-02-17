@@ -33,7 +33,7 @@ Store.prototype.renderTd = function () {
 };
 
 var pike = new Store ('1st & pike', 23, 65, 6.3);
-var seaTacAir = new Store ('SeaTac Airport' , 3, 24, 1.2);
+var seaTacAir = new Store ('SeaTac Airport', 3, 24, 1.2);
 var seattleCenter = new Store ('Seattle Center', 11, 38, 3.7);
 var capHill = new Store ('Capitol Hil', 20, 38, 2.3);
 var alki = new Store ('Alki', 2, 16, 4.6);
@@ -64,13 +64,16 @@ userForm.addEventListener('submit', submitHandler);
 
 
 function submitHandler (event) {
-   event.preventDefault();
-var data = event.target.store_name.value;
-var miniC = event.target.minCust.value;
-var MaxiC = event.target.maxCust.value;
-var CpC = event.target.cookiePerCust.value;
-console.log(data);
-console.log(miniC);
-console.log(MaxiC);
-console.log(CpC);
+  event.preventDefault();
+  var data = event.target.store_name.value;
+  var miniC = event.target.minCust.value;
+  var MaxiC = event.target.maxCust.value;
+  var CpC = event.target.cookiePerCust.value;
+  var newStore = new Store (data, miniC, MaxiC, CpC);
+  console.log(data);
+  console.log(miniC);
+  console.log(MaxiC);
+  console.log(CpC);
+  newStore.customerCookies();
+  newStore.renderTd();
 }
