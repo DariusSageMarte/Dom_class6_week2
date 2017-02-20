@@ -51,6 +51,13 @@ function renderHeader() {
 renderHeader();
 pike.customerCookies();
 pike.renderTd();
+seattleCenter.customerCookies();
+seattleCenter.renderTd();
+alki.customerCookies();
+alki.renderTd();
+capHill.customerCookies();
+capHill.renderTd();
+seaTacAir.renderTd();
 
 // var userForm = document.getElementById('new_store');
 
