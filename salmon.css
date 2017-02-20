@@ -1,18 +1,46 @@
 body {
-    background-color: #000;
+  font-family: Helvetica;
+background: linear-gradient(to left, #F00000 , #DC281E);}
+
+header ul li{
+  display: inline-block;
+ background-color: purple;
+float: right;
+border-radius:20px;
+margin: 25px;
+}
+a {
+  text-decoration:none;
+} 
+article{
+  text-align: center;
+  background-color: white;
+}
+h1 {
+  text-align: right;
+  background-color:white;
+ border-radius:25px;
+}
+p {
+  background-color: maroon;
+  color: cadetblue;
+ display: inline-block;
+ width: 310px;
+ margin-left:200px;
+ border-radius:10px;
 }
 
-#spice {
-   float:right; 
+#salmon {
+  float:right;
+  text-align: right;
+}
+section p {
+  text-align:center;
+  background-color:brown;
+  color: orange;
+  border-radius:25px;
+ height:325px;
+ width:300px;
+ padding: 50px;
 }
 
-#navi {
-    display:inline-block;
-    text-decoration:none;
-}
-hr {
-color:deeppink;
-}
-#sub-banner {
-    
-}
